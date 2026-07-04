@@ -17,11 +17,9 @@ int main() {
     fgets(items, sizeof(items), stdin);
     items[strlen(items) - 1] = '\0';
 
-    getchar();
     printf("What is the price of each?: ");
-    scanf(" %.2f", &price);
+    scanf(" %f", &price);
 
-    getchar();
     printf("How many would you like?: ");
     scanf(" %d", &quantity);
 
@@ -29,7 +27,7 @@ int main() {
     totalPrice = quantity * price;
 
     printf("You have bought %d %s/s\n", quantity, items);
-    printf("The total is: %.2f", totalPrice);
+    printf("The total is: %.2f $", totalPrice);
     
     return 0;
 }
