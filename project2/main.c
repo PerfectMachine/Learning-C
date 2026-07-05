@@ -15,12 +15,12 @@ int main() {
     printf("aaa");
     area = pi * (pow(radius,2));
     surfaceArea = 4 * area;
-    volume = (4 / 3) * pi * (pow(radius,3));
+    volume = (4.0 / 3.0) * pi * (pow(radius,3));
     
-    printf("Chosen radius: %f\n", radius);
-    printf("Area: %f\n", area);
-    printf("Surface Area: %f\n", surfaceArea);
-    printf("Volume: %f\n", volume);
+    printf("Chosen radius: %.2f\n", radius);
+    printf("Area: %.2f\n", area);
+    printf("Surface Area: %.2f\n", surfaceArea);
+    printf("Volume: %.2f\n", volume);
 
     return 0;
 }
