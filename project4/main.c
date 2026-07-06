@@ -30,6 +30,10 @@ int main(){
         break;
     
     case '/':
+        if(num2 == 0){
+            printf("Invalid input! Division by zero\n");
+            break;
+        }
         printf("Your result is %.2f", num1/num2);
         break;
     default:
